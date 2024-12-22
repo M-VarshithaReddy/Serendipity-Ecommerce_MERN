@@ -75,6 +75,10 @@ body, html {
 .category-badge:hover {
     background-color: #f0a6ca;
 }
+.category-badge.active {
+    background-color: #9C89B8;
+    color: #F2F4EE;
+}
 
 .products-section {
     display: flex;
@@ -99,6 +103,10 @@ body, html {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.product-card:hover .product-image {
+    transform: scale(1.1);  
 }
 
 .product-details {
@@ -139,4 +147,32 @@ body, html {
     font-size: 18px;
     color: #9C89B8;
     cursor: pointer;
+}
+
+.sale-banner {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #F0A6CA;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #B8BEDD;
+    margin-right: 10px;
+}
+
+.discounted-price {
+    font-weight: bold;
+}
+
+.discount {
+    color: #E64A19;
+    font-weight: bold;
 }
