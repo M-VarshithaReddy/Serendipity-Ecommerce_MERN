@@ -1,0 +1,142 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard-container {
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    height: 100vh;  
+    background-color: #f2f4ee; 
+    font-family: Arial, sans-serif;
+}
+
+.header-banner {
+    width: 100%;
+    background-color: #f0a6ca; 
+    color: #fff;
+    text-align: center;
+    
+    font-weight: bold;
+}
+
+.top-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #9c89b8; 
+    color: #f2f4ee; 
+    flex-shrink: 0; 
+}
+
+.logo-image {
+    height: 50px;
+}
+
+.top-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.categories-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.category-badge {
+    background-color: #e7bcde; 
+    color: #9c89b8; 
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-badge:hover {
+    background-color: #f0a6ca;
+}
+
+.products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;  
+}
+
+.product-card {
+    background-color: #f0e6ef; 
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+.product-name {
+    font-weight: bold;
+    color: #9c89b8; 
+}
+
+.product-price {
+    color: #7b6c94; 
+    margin-top: 5px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #F2F4EE;
+    border: 1px solid #B8BEDD;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 15px;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #9C89B8;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #9C89B8;
+    cursor: pointer;
+}
